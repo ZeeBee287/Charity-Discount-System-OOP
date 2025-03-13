@@ -1,18 +1,17 @@
 #include <iostream>
-
 using namespace std;
 
 float dis(int, float);
 
 int main()
 {
-    int a; 
+    int a;
     float percentage;
     int option;
     int num = 0;
     int price;
     int sum = 0;
-    float discounted_price;
+    float discounted_price, donated_amount;
 
     cout << "Thank you for shopping at J&Z's Clothing Line" << endl;
     cout << "\nBeing human is given, but keeping our humanity is a choice\n" << endl;
@@ -53,11 +52,14 @@ int main()
         sum += price;
     }
 
-    cout << "\nYour total bill is: " << sum << endl;
+    cout << "\nYour total bill is: " << sum << "/-" << endl;
     
     // Apply discount
     discounted_price = dis(sum, percentage);
-    cout << "New bill after discount: " << discounted_price << endl;
+    donated_amount = sum - discounted_price; // The waived-off amount is donated
+
+    cout << "New bill after discount: " << discounted_price << "/-" << endl;
+    cout << "An amount of " << donated_amount << "/- has been donated to a charity of your choice." << endl;
 
     // Charity selection
     cout << "\nSelect an option for the charity your money will be donated to:\n";
@@ -69,16 +71,16 @@ int main()
 
     switch (option) {
         case 1:
-            cout << "Thank you for donating to The Edhi Foundation." << endl;
+            cout << "Thank you for donating " << donated_amount << "/- to The Edhi Foundation." << endl;
             break;
         case 2:
-            cout << "Thank you for donating to The Ansar Burney Trust." << endl;
+            cout << "Thank you for donating " << donated_amount << "/- to The Ansar Burney Trust." << endl;
             break;
         case 3:
-            cout << "Thank you for donating to Shaukat Khanum Cancer Hospital." << endl;
+            cout << "Thank you for donating " << donated_amount << "/- to Shaukat Khanum Cancer Hospital." << endl;
             break;
         default:
-            cout << "Invalid selection!" << endl;
+            cout << "Invalid selection! No donation made." << endl;
             break;
     }
 
