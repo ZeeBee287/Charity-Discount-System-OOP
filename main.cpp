@@ -88,6 +88,7 @@ int main()
     return 0;
 }
 
+
 float dis(int x, float y)
 {
     return x - (x * y);  // Returns final amount after discount
