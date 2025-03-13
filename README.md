@@ -41,27 +41,8 @@ This project follows **OOP principles** to ensure modularity and reusability:
 ## Project Structure
 ```
 |-- main.cpp                     # C++ source code for the program
-|-- charity_discount.cbp         # Code::Blocks project file
-|-- project report.docx          # Detailed project proposal
-|-- flowchart.xlsx               # Flowchart of Discount system/project
+|-- program_output.png           # Program run on Command Prompt
 ```
-
-## How to Run the Program
-### **Using Code::Blocks**
-1. Open **Code::Blocks**.
-2. Click **File → Open**.
-3. Select `charity_discount.cbp` to load the project.
-4. Click **Build → Build and Run** or press `F9`.
-
-### **Using Command Line (Alternative)**
-1. **Compile the C++ file**:
-   ```sh
-   g++ main.cpp -o charity_discount
-   ```
-2. **Run the compiled program**:
-   ```sh
-   ./charity_discount
-   ```
 
 ## Charities Available
 1. **Edhi Foundation**
