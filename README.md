@@ -1,11 +1,21 @@
 # Charity Discount System
 
-## Introduction
-This program is designed for a famous clothing line that runs a special **International Charity Week** from **November 25th to December 9th**. Customers receive discounts on their purchases, and **40% of the total sales are donated** to selected charities. The system allows customers to:
 
-- Enter the date of their purchase to determine their discount.
-- Enter the price of purchased items and calculate the total bill after applying the discount.
-- Choose from three charity organizations to donate a portion of their purchase.
+## Introduction
+The program is based on the launch of a famous clothing line during **International Charity Week**, from **November 25th to December 9th**. The charities are selected by the owners, and customers receive discounts during these two weeks, with **100% of the proceeds donated** to their chosen charity. This program allows customers to select their preferred charity and determine the discount they will receive based on their purchase date. The discounts are as follows:
+
+- **50% discount** (November 25th - November 30th)
+- **30% discount** (December 1st - December 5th)
+- **10% discount** (December 6th - December 9th)
+
+## Problem Statement
+Since this is a charity initiative, managing donations efficiently is crucial. The program is designed to allow customers to:
+
+- Easily avail the discount applicable to their purchase date.
+- Enter item prices and calculate their total bill after applying the discount.
+- Select the charity to which they want a portion of their payment to be donated.
+
+This system ensures that customers can easily determine their discounts, while cashiers can efficiently process transactions. Additionally, it helps in tracking which charities receive donations and how the total sales are distributed among them.
 
 ## Features
 - **Date-based discount system**:
@@ -33,7 +43,7 @@ This project follows **OOP principles** to ensure modularity and reusability:
 |-- main.cpp                     # C++ source code for the program
 |-- charity_discount.cbp         # Code::Blocks project file
 |-- project report.docx          # Detailed project proposal
-|-- flowchart.xlsx               # Flowchart of Discount system/prpject
+|-- flowchart.xlsx               # Flowchart of Discount system/project
 ```
 
 ## How to Run the Program
@@ -64,4 +74,3 @@ This project follows **OOP principles** to ensure modularity and reusability:
 
 ---
 Thank you for shopping at J&Z's Clothing Line! 😊
-
